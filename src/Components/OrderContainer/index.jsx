@@ -1,9 +1,11 @@
+import { OrderInfos } from "../OrderInfos";
 import "./OrderContainer.css";
 
 export function OrderContainer() {
   return (
     <div className="c-order">
-      <h1>Order Container</h1>
+      <OrderInfos />
+      <div className="c-order__addInfos"></div>
     </div>
   );
 }
