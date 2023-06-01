@@ -11,7 +11,6 @@ export function OrderInfos() {
       .then((response) => response.json())
       .then((data) => setProductInfos(data));
   }, []);
-
   return (
     <div className="c-order__infos">
       <div className="infos__img">
