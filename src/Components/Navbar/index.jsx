@@ -10,7 +10,7 @@ export function Navbar() {
         <div className="c-menu__arrow">
           <IoIosArrowBack style={{ color: "#686868" }} />
         </div>
-        <img src="/Deliverize-logo.svg" />
+        <img src="/Deliverize-logo.svg" alt="Logo-Deliverize" />
         <div className="c-menu__items">
           <div className="c-menu__delivery">
             <div className="delivery__info">
