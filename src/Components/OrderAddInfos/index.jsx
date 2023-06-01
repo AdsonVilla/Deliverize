@@ -23,9 +23,30 @@ export function OrderAddInfos() {
 
       {productInfos.map((item) => {
         return (
-          <ExtraItems name={item.nm_item} price={item.vl_item} key={item.id} />
+          <div>
+            <ExtraItems
+              name={item.nm_item}
+              price={item.vl_item}
+              key={item.id}
+            />
+            {item.id !== item.length - 1 && <hr />}
+          </div>
         );
       })}
+
+      <div className="addInfos__cutlery">
+        <h4>Precisa de Talher?</h4>
+      </div>
+      <div className="cutlery__confirmation">
+        <div className="confirmation__tag">
+          <label for="Yes">Sim</label>
+          <input type="radio" id="Yes" name="Yes" value={true} />
+        </div>
+        <div className="confirmation__tag">
+          <label for="No">Não</label>
+          <input type="radio" id="No" name="No" value={false} />
+        </div>
+      </div>
 
       {/* <div className="addInfos__quantities">
         <div className="quantities__item">

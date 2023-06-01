@@ -15,3 +15,41 @@
   font-size: 12px;
   color: #e49700;
 }
+
+.addInfos__cutlery {
+  height: 55px;
+  background-color: rgba(253, 215, 14, 0.2);
+  padding: 8px 14px;
+  margin-top: 9px;
+}
+
+.addInfos__cutlery h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4e4e4e;
+}
+
+.cutlery__confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.confirmation__tag {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirmation__tag label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4e4e4e;
+}
+
+.confirmation__tag label + input:before {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #febc10;
+}

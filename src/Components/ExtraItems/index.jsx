@@ -11,12 +11,12 @@ export function ExtraItems({ name, price }) {
           <span>+ R${price || ""}</span>
         </div>
         <div className="item__quantity">
-          <IoIosAdd style={{ color: "#D80000", width: "14px" }} />
-          <span>1</span>
           <IoIosRemove style={{ color: "#D80000", width: "14px" }} />
+          <span>1</span>
+          <IoIosAdd style={{ color: "#D80000", width: "14px" }} />
         </div>
       </div>
-      <hr />
+      {/* <hr/> */}
     </div>
   );
 }
