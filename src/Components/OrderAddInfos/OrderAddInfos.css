@@ -48,8 +48,37 @@
   color: #4e4e4e;
 }
 
-.confirmation__tag label + input:before {
+.confirmation__tag input {
   width: 16px;
   height: 16px;
   border: 1px solid #febc10;
+}
+
+.addInfos__confirmOrder {
+  padding: 16px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.confirmOrder__quantity {
+  width: 140px;
+  height: 40px;
+  padding: 19px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #f09035;
+  border-radius: 4px;
+}
+
+.addInfos__confirmOrder button {
+  width: 195px;
+  height: 40px;
+  background: #f09035;
+  border: 0;
+  border-radius: 4px;
+  color: #ffff;
 }

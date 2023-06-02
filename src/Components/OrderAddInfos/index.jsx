@@ -1,4 +1,5 @@
 import "./OrderAddInfos.css";
+import { IoIosAdd, IoIosRemove } from "react-icons/io";
 import { ExtraItems } from "../ExtraItems";
 import { useState, useEffect } from "react";
 
@@ -40,12 +41,37 @@ export function OrderAddInfos() {
       <div className="cutlery__confirmation">
         <div className="confirmation__tag">
           <label for="Yes">Sim</label>
-          <input type="radio" id="Yes" name="Yes" value={true} />
+          <input
+            type="radio"
+            id="Yes"
+            name="Yes"
+            value={true}
+            style={{ borderColor: "#FEBC10" }}
+          />
         </div>
         <div className="confirmation__tag">
           <label for="No">Não</label>
-          <input type="radio" id="No" name="No" value={false} />
+          <input
+            type="radio"
+            id="No"
+            name="No"
+            value={false}
+            style={{ borderColor: "#FEBC10" }}
+          />
         </div>
+      </div>
+
+      <div className="addInfos__confirmOrder">
+        <div className="confirmOrder__quantity">
+          <IoIosRemove
+            style={{ color: "#ED3237", width: "14px", height: "14px" }}
+          />
+          <span>1</span>
+          <IoIosAdd
+            style={{ color: "#ED3237", width: "14px", height: "14px" }}
+          />
+        </div>
+        <button>Adicionar</button>
       </div>
 
       {/* <div className="addInfos__quantities">
