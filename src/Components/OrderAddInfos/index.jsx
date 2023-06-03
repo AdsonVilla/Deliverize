@@ -1,11 +1,13 @@
 import "./OrderAddInfos.css";
 import { IoIosAdd, IoIosRemove } from "react-icons/io";
 import { ExtraItems } from "../ExtraItems";
+import { Popover, Typography, List, ListItem, AlertTitle } from "@mui/material";
 import { useState, useEffect } from "react";
 
 export function OrderAddInfos() {
   const [productInfos, setProductInfos] = useState([]);
   const [quantity, setQuantity] = useState(1);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   function handleIncrementQuantity() {
     setQuantity(quantity + 1);
@@ -15,6 +17,13 @@ export function OrderAddInfos() {
     if (quantity > 1) {
       setQuantity(quantity - 1);
     }
+  }
+
+  function handleAddToCart(event) {
+    setAnchorEl(event.currentTarget);
+    setTimeout(() => {
+      setAnchorEl(null);
+    }, 3000);
   }
 
   const productInfosApi =
@@ -88,7 +97,38 @@ export function OrderAddInfos() {
               onClick={handleIncrementQuantity}
             />
           </div>
-          <button>Adicionar</button>
+          <button onClick={handleAddToCart}>Adicionar</button>
+
+          <Popover
+            open={Boolean(anchorEl)}
+            anchorEl={anchorEl}
+            onClose={() => setAnchorEl(null)}
+            anchorReference="anchorPosition"
+            anchorPosition={{ top: -1, left: 1050 }}
+          >
+            <Typography sx={{ p: 2, bgcolor: "#F09035", color: "#FFFF" }}>
+              Adicionado com sucesso!
+            </Typography>
+            <List sx={{ p: 2 }}>
+              <AlertTitle
+                sx={{
+                  color: "#BC2E31",
+                  fontWeight: "700",
+                }}
+              >
+                Oferta Cheddar Bacon
+              </AlertTitle>
+              <AlertTitle sx={{ color: "#4E4E4E" }}>
+                Ingredientes:
+                <List>
+                  <ListItem>1 Carne 250gr</ListItem>
+                  <ListItem>2 Queijo Cheddar</ListItem>
+                  <ListItem>1 Bacon</ListItem>
+                  <ListItem>Molho Especial</ListItem>
+                </List>
+              </AlertTitle>
+            </List>
+          </Popover>
         </div>
       </div>
     </div>
