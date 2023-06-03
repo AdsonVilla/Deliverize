@@ -5,6 +5,17 @@ import { useState, useEffect } from "react";
 
 export function OrderAddInfos() {
   const [productInfos, setProductInfos] = useState([]);
+  const [quantity, setQuantity] = useState(1);
+
+  function handleIncrementQuantity() {
+    setQuantity(quantity + 1);
+  }
+
+  function handleDecrementQuantity() {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  }
 
   const productInfosApi =
     "https://6077803e1ed0ae0017d6aea4.mockapi.io/test-frontend/products";
@@ -64,11 +75,17 @@ export function OrderAddInfos() {
         <div className="addInfos__confirmOrder">
           <div className="confirmOrder__quantity">
             <IoIosRemove
-              style={{ color: "#ED3237", width: "14px", height: "14px" }}
+              style={
+                quantity !== 1
+                  ? { color: "#D80000", width: "16px" }
+                  : { color: "#AEB6C1", width: "16px" }
+              }
+              onClick={handleDecrementQuantity}
             />
-            <span>1</span>
+            <span>{quantity}</span>
             <IoIosAdd
               style={{ color: "#ED3237", width: "14px", height: "14px" }}
+              onClick={handleIncrementQuantity}
             />
           </div>
           <button>Adicionar</button>
