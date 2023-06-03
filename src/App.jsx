@@ -4,7 +4,7 @@ import { OrderContainer } from "./Components/OrderContainer";
 
 function App() {
   return (
-    <div>
+    <div className="main-container">
       <Navbar />
       <OrderContainer />
     </div>

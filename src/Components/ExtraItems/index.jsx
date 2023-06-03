@@ -16,7 +16,7 @@ export function ExtraItems({ name, price }) {
           <IoIosAdd style={{ color: "#D80000", width: "14px" }} />
         </div>
       </div>
-      {/* <hr/> */}
+      <hr />
     </div>
   );
 }

@@ -88,3 +88,19 @@ hr {
     gap: 40px;
   }
 }
+
+@media (min-width: 1200px) {
+  .addInfos__quantities {
+    width: 375px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quantities__item {
+    max-width: 359px;
+  }
+
+  hr {
+    width: 359px;
+  }
+}

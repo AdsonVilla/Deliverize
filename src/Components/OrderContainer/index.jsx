@@ -6,6 +6,7 @@ export function OrderContainer() {
   return (
     <div className="c-order">
       <OrderInfos />
+
       <OrderAddInfos />
     </div>
   );
