@@ -50,7 +50,7 @@ export function OrderAddInfos() {
           />
         </div>
         <div className="confirmation__tag">
-          <label for="No">Não</label>
+          <label>Não</label>
           <input
             type="radio"
             id="No"

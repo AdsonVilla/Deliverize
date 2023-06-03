@@ -2,6 +2,7 @@
   height: 55px;
   background-color: rgba(253, 215, 14, 0.2);
   padding: 8px 14px;
+  margin-bottom: 8px;
 }
 
 .addInfos__header h4 {
@@ -81,4 +82,24 @@
   border: 0;
   border-radius: 4px;
   color: #ffff;
+}
+
+@media (min-width: 924px) {
+  .addInfos__header {
+    padding: 8px 16px;
+    margin-bottom: 7px;
+  }
+
+  .addInfos__header h4 {
+    font-weight: 500;
+    font-size: 14px;
+
+    color: #4e4e4e;
+  }
+
+  .addInfos__header span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #e49700;
+  }
 }

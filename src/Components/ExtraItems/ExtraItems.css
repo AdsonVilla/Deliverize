@@ -54,3 +54,37 @@ hr {
   height: 0px;
   border: 1px solid #e8a634;
 }
+
+@media (min-width: 924px) {
+  .quantities__item {
+    height: 100%;
+    margin-top: 9px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1012px) {
+  .addInfos__quantities {
+    padding: 0;
+    margin-top: 9px;
+    margin-bottom: 8px;
+  }
+
+  .quantities__item {
+    height: 100%;
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+
+    gap: 40px;
+  }
+}
