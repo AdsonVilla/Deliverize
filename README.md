@@ -6,7 +6,7 @@ Projeto simulando uma página de uma plataforma de pedidos de comida para delive
 - Vite
 - React JS (com JSX, ou, HTML in JS)
 - JavaScript
-- CSS
+- CSS com BEM
 - Git
 
 ## Extras
