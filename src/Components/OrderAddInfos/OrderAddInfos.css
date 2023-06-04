@@ -74,6 +74,12 @@
   border-radius: 4px;
 }
 
+.confirmOrder__quantity span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4e4e4e;
+}
+
 .addInfos__confirmOrder button {
   width: 195px;
   height: 40px;

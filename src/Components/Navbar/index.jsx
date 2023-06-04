@@ -1,9 +1,11 @@
 import { IoIosArrowBack, IoIosArrowDown } from "react-icons/io";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { useState } from "react";
 import "./Navbar.css";
 
 export function Navbar() {
+  const [cartItemCount, setCartItemCount] = useState(1);
   return (
     <nav>
       <div className="c-menu">
@@ -28,16 +30,25 @@ export function Navbar() {
             />
           </div>
           <div className="c-menu__login">
-            <RiAccountCircleLine
-              style={{ color: "#ED3237", width: "32px", height: "32px" }}
-            />
-            <span>Entrar</span>
+            <a href="#">
+              <RiAccountCircleLine
+                style={{ color: "#ED3237", width: "32px", height: "32px" }}
+              />
+              <span>Entrar</span>
+            </a>
           </div>
           <div className="c-menu__cart">
-            <MdOutlineShoppingCart
-              style={{ color: "#ED3237", width: "32px", height: "32px" }}
-            />
-            <span>Carrinho</span>
+            <a href="#">
+              <div className="cart__icon">
+                <MdOutlineShoppingCart
+                  style={{ color: "#ED3237", width: "32px", height: "32px" }}
+                />
+                {cartItemCount > 0 && (
+                  <span className="cart__notification">{cartItemCount}</span>
+                )}
+              </div>
+              <span>Carrinho</span>
+            </a>
           </div>
         </div>
       </div>

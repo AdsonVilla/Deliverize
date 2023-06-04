@@ -175,6 +175,7 @@ nav {
 
   nav {
     height: 70px;
+    padding: 40px;
   }
 
   .c-menu {
@@ -236,12 +237,47 @@ nav {
     color: #656363;
   }
 
+  /* .c-menu__search input:focus,
+  .c-menu__search input:active {
+    border: 1px solid #ed3237;
+  } */
+
   .c-menu__login,
   .c-menu__cart {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
+  }
+
+  .c-menu__login a,
+  .c-menu__cart a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cart__icon {
+    position: relative;
+  }
+
+  .cart__icon .cart__notification {
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: #f09035;
+    color: white;
+    font-weight: 400;
+    font-size: 10px;
+    font-size: 12px;
+    border-radius: 50%;
   }
 
   .c-menu__login span,

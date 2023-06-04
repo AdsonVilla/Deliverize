@@ -1,5 +1,5 @@
 import "./OrderAddInfos.css";
-import { IoIosAdd, IoIosRemove } from "react-icons/io";
+import { BiPlus, BiMinus } from "react-icons/bi";
 import { ExtraItems } from "../ExtraItems";
 import { useState, useEffect } from "react";
 import { PopoverComponent } from "../Popover";
@@ -83,17 +83,17 @@ export function OrderAddInfos() {
 
         <div className="addInfos__confirmOrder">
           <div className="confirmOrder__quantity">
-            <IoIosRemove
+            <BiMinus
               style={
                 quantity !== 1
-                  ? { color: "#D80000", width: "16px" }
-                  : { color: "#AEB6C1", width: "16px" }
+                  ? { color: "#D80000", width: "24px", height: "24px" }
+                  : { color: "#AEB6C1", width: "24px", height: "24px" }
               }
               onClick={handleDecrementQuantity}
             />
             <span>{quantity}</span>
-            <IoIosAdd
-              style={{ color: "#ED3237", width: "16px", height: "16px" }}
+            <BiPlus
+              style={{ color: "#ED3237", width: "24px", height: "24px" }}
               onClick={handleIncrementQuantity}
             />
           </div>

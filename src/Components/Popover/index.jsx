@@ -15,7 +15,9 @@ export function PopoverComponent({
       anchorReference="anchorPosition"
       anchorPosition={{ top: -1, left: 1050 }}
     >
-      <Typography sx={{ p: 2, bgcolor: "#F09035", color: "#FFFF" }}>
+      <Typography
+        sx={{ p: 2, bgcolor: "#F09035", color: "#FFFF", fontWeight: 700 }}
+      >
         Adicionado com sucesso!
       </Typography>
       <List sx={{ p: 2 }}>

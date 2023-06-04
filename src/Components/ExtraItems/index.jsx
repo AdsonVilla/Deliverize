@@ -1,4 +1,4 @@
-import { IoIosAdd, IoIosRemove } from "react-icons/io";
+import { BiPlus, BiMinus } from "react-icons/bi";
 import "./ExtraItems.css";
 import { useState } from "react";
 
@@ -23,17 +23,17 @@ export function ExtraItems({ name, price }) {
           <span>+ R${price || ""}</span>
         </div>
         <div className="item__quantity">
-          <IoIosRemove
+          <BiMinus
             style={
               itemQuantity !== 0
-                ? { color: "#D80000", width: "16px" }
-                : { color: "#AEB6C1", width: "16px" }
+                ? { color: "#D80000", width: "24px", height: "24px" }
+                : { color: "#AEB6C1", width: "24px", height: "24px" }
             }
             onClick={handleDecrementQuantity}
           />
           <span>{itemQuantity}</span>
-          <IoIosAdd
-            style={{ color: "#D80000", width: "14px" }}
+          <BiPlus
+            style={{ color: "#D80000", width: "24px", height: "24px" }}
             onClick={handleIncrementQuantity}
           />
         </div>

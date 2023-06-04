@@ -37,8 +37,9 @@
 .quantities__item .item__quantity {
   width: 89px;
   height: 32px;
-  padding: 8px 9px;
+  padding: 4px 5px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border: 1px solid #f09035;
   border-radius: 5px;
