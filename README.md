@@ -62,16 +62,16 @@ npm install @mui/material @emotion/react @emotion/styled
 
 ## Imagens
 - Dispositivos Mobile
-![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/38d94d25-8532-45ee-a210-e41f5022859d)
-![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/1c20962f-ed58-45e2-8d08-a654dcaf0aa6)
+- ![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/38d94d25-8532-45ee-a210-e41f5022859d)
+- ![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/1c20962f-ed58-45e2-8d08-a654dcaf0aa6)
 - Ao clicar no botão "Adicionar":
-![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/54183448-fd81-423d-9fd1-145cff25050d)
+- ![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/54183448-fd81-423d-9fd1-145cff25050d)
 
 
 - Dispositivos Desktop
-![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/e97c2922-8fb2-46b9-8fb8-4732608a817f)
-![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/2167bafc-7f3d-4f13-86af-3346c7beb1f3)
+- ![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/e97c2922-8fb2-46b9-8fb8-4732608a817f)
+- ![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/2167bafc-7f3d-4f13-86af-3346c7beb1f3)
 - Ao clicar no botão "Adicionar"
-![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/f2b68ebe-2dc8-458b-8305-3b6e98b48c17)
+- ![image](https://github.com/AdsonVilla/Deliverize/assets/105760278/f2b68ebe-2dc8-458b-8305-3b6e98b48c17)
 
  
