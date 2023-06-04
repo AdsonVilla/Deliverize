@@ -7,6 +7,7 @@ import { PopoverComponent } from "../Popover";
 export function OrderAddInfos() {
   const [productInfos, setProductInfos] = useState([]);
   const [quantity, setQuantity] = useState(1);
+  const [selectedOption, setSelectedOption] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
 
   function handleIncrementQuantity() {
@@ -17,6 +18,10 @@ export function OrderAddInfos() {
     if (quantity > 1) {
       setQuantity(quantity - 1);
     }
+  }
+
+  function handleOptionChange(option) {
+    setSelectedOption(option);
   }
 
   function handleAddToCart(event) {
@@ -63,8 +68,10 @@ export function OrderAddInfos() {
                 type="radio"
                 id="Yes"
                 name="Yes"
-                value={true}
+                value="Sim"
                 style={{ borderColor: "1px solid #FEBC10" }}
+                checked={selectedOption === "Sim"}
+                onChange={() => handleOptionChange("Sim")}
               />
             </div>
             <div className="confirmation__tag">
@@ -74,8 +81,10 @@ export function OrderAddInfos() {
                 type="radio"
                 id="No"
                 name="No"
-                value={false}
+                value="Não"
                 style={{ border: 0 }}
+                checked={selectedOption === "Não"}
+                onChange={() => handleOptionChange("Não")}
               />
             </div>
           </div>
