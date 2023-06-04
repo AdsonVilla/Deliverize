@@ -2,6 +2,9 @@
 
 Projeto simulando uma página de uma plataforma de pedidos de comida para delivery. A página conta com uma navbar, uma seção contendo o item escolhido pelo cliente com suas informações, como descrição e preço promocional, e com uma seção para adicionar itens extras e finalizar o pedido.
 
+## Link do deploy
+- https://deliverize-nine.vercel.app/
+
 ## Tecnologias utilizadas
 - Vite
 - React JS (com JSX, ou, HTML in JS)
