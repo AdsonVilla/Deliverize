@@ -237,11 +237,6 @@ nav {
     color: #656363;
   }
 
-  /* .c-menu__search input:focus,
-  .c-menu__search input:active {
-    border: 1px solid #ed3237;
-  } */
-
   .c-menu__login,
   .c-menu__cart {
     display: flex;

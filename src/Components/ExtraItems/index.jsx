@@ -19,8 +19,8 @@ export function ExtraItems({ name, price }) {
     <div className="addInfos__quantities">
       <div className="quantities__item">
         <div className="item__infos">
-          <h4>{name || ""}</h4>
-          <span>+ R${price || ""}</span>
+          <h4>{name}</h4>
+          <span>+ R${price}</span>
         </div>
         <div className="item__quantity">
           <BiMinus

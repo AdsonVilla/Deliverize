@@ -87,6 +87,11 @@
   border: 0;
   border-radius: 4px;
   color: #ffff;
+  transition: transform 0.4s;
+}
+
+.addInfos__confirmOrder button:hover {
+  transform: scale(1.03);
 }
 
 @media (min-width: 924px) {
@@ -98,7 +103,6 @@
   .addInfos__header h4 {
     font-weight: 500;
     font-size: 14px;
-
     color: #4e4e4e;
   }
 
@@ -111,8 +115,6 @@
 
 @media (min-width: 1200px) {
   .c-order__addInfos {
-    /* width: 439px;
-    height: 100%; */
     padding: 28px;
     border: 1px solid #4e4e4e;
     border-radius: 5px;
@@ -133,8 +135,4 @@
     margin-top: 12px;
     margin-bottom: 0;
   }
-
-  /* .confirmation__tag {
-    max-width: 359px;
-  } */
 }
